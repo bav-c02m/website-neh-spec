@@ -10,144 +10,52 @@ body {
     height: 100dvh;
 
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 }
 
 
-/* |___ CONT TOP ___| */
 
-.top {
-    background-color: aliceblue;
-    border: 1px solid black;
+/* |___-CONTS-___| */
 
+.conts {
+    display: flex;
+
+    padding-bottom: 2%;
+}
+
+/* |___-NAVI-___| */
+
+.navi {
     width: 100%;
     height: 24%;
+}
+.butts {
+    width: 100%;
+    height: 100%;
 
-    padding: 1%;
+    margin: 1%;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-}
-
-.butt.top {
+    
     border: 1px solid black;
     border-radius: 25%;
 
-    width: 49%;
-    height: 100%;
+    box-shadow: 
+        inset 0 0 20px,
+        3px 3px 10px;
 
     text-decoration: none;
     text-transform: uppercase;
     color: inherit;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
+/* |___-DISP-___| */
 
-/* |___ CONT BOT ___| */
-
-.bot {
-    background-color: aliceblue;
-    border: 1px solid black;
-
-    width: 100%;
-    height: 24%;
-
-    padding: 1%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.butt.bot {
-    border: 1px solid black;
-    border-radius: 25%;
-
-    width: 100%;
-    height: 100%;
-
-    text-decoration: none;
-    text-transform: uppercase;
-    color: inherit;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* |___ CONT DISP ___| */
-
-.cont.disp {
-    background-color: antiquewhite;
-
+.disp {
     width: 100%;
     height: 50%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.swiper {
-    width: 100%;
-    height: 100%;
-
-    max-width: 400px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: relative;
-
-    overflow: hidden;
-}
-
-.tracker {
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    transition: transform 0.75s ease-in-out;
-}
-
-.slide {
-    min-width: 100%;
-    height: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slide img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-
-.slide:nth-child(1) { background: #6fbff4; }
-.slide:nth-child(2) { background: aliceblue; }
-.slide:nth-child(3) { background: #d97064; }
-.slide:nth-child(4) { background: #470a1b; }
-
-.buttons {
-    position: absolute;
-
-    width: 100%;
-
-    display: flex;
-    justify-content: space-between;
-}
-
-.buttons button {
-    width: 50px;
-    height: 50px;
 }
