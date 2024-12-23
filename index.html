@@ -3,28 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nehtový Specialista</title>
-    <link rel="stylesheet" href="static/css/index.css">
+    <title>home-cont-top</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: aliceblue;
+            width: 100dvw;
+            height: 100dvh;
+        }
+
+        .working-space {
+            border: 3px solid black;
+            max-width: 1920px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            box-shadow: inset 0 0 15px 5px rgba(6, 202, 205, 0.5);
+        }
+
+        .conts {
+            width: 100%;
+            height: 24%;
+
+            padding: 3%;
+            gap: 2%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .butts {
+            border: 1.5px solid black;
+            border-radius: 25%;
+
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            box-shadow: 
+                inset 0 0 15px 5px rgba(0, 0, 0, 0.5);
+
+            text-decoration: none;
+            text-transform: uppercase;
+            color: inherit;
+        }
+
+        #sluzby {
+            background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(255, 0, 0) 100%);
+        }
+        #produkty {
+            background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(255, 255, 0) 100%);
+        }
+        #kontakty {
+            background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(0, 255, 0) 100%);
+        }
+
+        .cont.disp {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+            max-width: 420px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+            background-color: #f0f0f0; /* Background color for slide container */
+            border: 1.5px solid black; /* Border for the slider container */
+            border-radius: 25%; /* Rounded corners for the slider container */
+            box-shadow: 
+                inset 0 0 15px 5px rgba(225, 10, 10, 0.5), /* Inset shadow for the slider container */
+                0 0px 15px 5px rgba(6, 202, 205, 0.5); /* Box shadow for the slider container */
+            display: grid; /* Добавление стилей дисплея */
+            grid-template-columns: 1fr; /* Настройка колонок */
+            grid-template-rows: 1fr; /* Настройка строк */
+        }
+
+        .slide {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            transition: transform 0.5s ease-in-out; /* Transition duration set to 0.5 seconds */
+            background-color: #ccc; /* Background color for each slide */
+            border-radius: 15px; /* Rounded corners for each slide */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for each slide */
+        }
+
+        .slide:nth-child(1) {
+            background-color: #ffcccc; /* Background color for first slide */
+        }
+
+        .slide:nth-child(2) {
+            background-color: #ccffcc; /* Background color for second slide */
+        }
+
+        .slide:nth-child(3) {
+            background-color: #ccccff; /* Background color for third slide */
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .buttons button {
+            padding: 10px;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            cursor: pointer;
+            border-radius: 50%; /* Rounded corners for buttons */
+        }
+    </style>
 </head>
 <body>
+    <div class="working-space">
+        <div class="conts navi" id="top">
+            <a href="#" class="butts" id="sluzby">služby</a>
+            <a href="#" class="butts" id="produkty">produkty</a>
+        </div>
+    
+        <div class="cont disp">
+            <div class="swiper">
+                <div class="slide"><img src="https://lh3.googleusercontent.com/p/AF1QipPKzKy_pogOO_YaRDsXXmuqGlGn2I27AcKt5PEf=s1360-w1360-h1020-rw" alt="Slide 1"></div>
+                <div class="slide"><img src="https://lh3.googleusercontent.com/p/AF1QipMwPSy0IBeHUNSF7v9vc43WnoeXAXag__oiwMgM=s1360-w1360-h1020-rw" alt="Slide 2"></div>
+                <div class="slide"><img src="https://lh3.googleusercontent.com/p/AF1QipNwMEkGxu1cIOqbmKk3czttskm4x3_MPa2RZLfk=s1360-w1360-h1020-rw" alt="Slide 3"></div>
+                <div class="slide"><img src="https://lh3.googleusercontent.com/p/AF1QipO4CK9ZlaYIfuxsmB_7Ze_UJ7CmLKQIDJlscpCk=s1360-w1360-h1020-rw" alt=""></div>
+                <div class="slide"><img src="https://lh3.googleusercontent.com/p/AF1QipNicnblNOlleX3i7z3tx-0lM7Cm6fGfsAwrCYLH=s1360-w1360-h1020-rw" alt=""></div>
+                <div class="slide"><img src="https://lh3.googleusercontent.com/p/AF1QipMwc2HNWtr3iCK0URFq-aGcWad4aCunTrty6jhc=s1360-w1360-h1020-rw" alt=""></div>
+                <div class="buttons">
+                    <button class="prev">Prev</button>
+                    <button class="next">Next</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="conts navi" id="bot">
+            <a href="#" class="butts" id="kontakty">kontakty</a>
+        </div>
 
-
-    <div class="conts navi">
-        <a href="#" class="butts"><h3>služby</h3></a>
-        <a href="#" class="butts"><h3>produkty</h3></a>
     </div>
 
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const buttons = document.querySelector('.buttons');
+        let currentIndex = 0;
+        let intervalId;
+        let timeoutId;
+        let isTransitioning = false;
 
-    <div class="conts disp">
-        <h1>disp</h1>
-    </div>
+        function showSlide(index) {
+            if (isTransitioning) return;
+            isTransitioning = true;
+            slides.forEach((slide, i) => {
+                slide.style.transform = `translateX(${100 * (i - index)}%)`;
+            });
+            setTimeout(() => {
+                isTransitioning = false;
+            }, 500); // Match the transition duration
+        }
 
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
 
-    <div class="conts navi">
-        <a href="#" class="butts"><h3>kontakty</h3></a>
-    </div>
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        }
 
+        function startAutoSlide() {
+            intervalId = setInterval(nextSlide, 10000);
+        }
 
-    <script src="static/js/index.js"></script>
+        function stopAutoSlide() {
+            clearInterval(intervalId);
+        }
+
+        function showButtons() {
+            buttons.style.opacity = 1;
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(() => {
+                buttons.style.opacity = 0;
+            }, 10000);
+        }
+
+        slides.forEach(slide => {
+            slide.addEventListener('click', () => {
+                stopAutoSlide();
+                showButtons();
+                setTimeout(startAutoSlide, 10000);
+            });
+        });
+
+        document.querySelector('.next').addEventListener('click', () => {
+            stopAutoSlide();
+            nextSlide();
+            showButtons();
+            setTimeout(startAutoSlide, 10000);
+        });
+
+        document.querySelector('.prev').addEventListener('click', () => {
+            stopAutoSlide();
+            prevSlide();
+            showButtons();
+            setTimeout(startAutoSlide, 10000);
+        });
+
+        showSlide(currentIndex);
+        startAutoSlide();
+    </script>
+
 </body>
 </html>
