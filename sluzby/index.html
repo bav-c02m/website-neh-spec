@@ -116,7 +116,7 @@
         }
 
         #kontakty {
-            background: radial-gradient(circle, white, rgba(255, 165, 0, 0.75));
+            background: radial-gradient(circle, white, rgba(255, 127, 0, 0.75));
             border-radius: 20%;
         }
 
@@ -132,7 +132,7 @@
             flex-direction: column;
             justify-content: space-between;
 
-            padding: 10%;
+            padding: 0;
             gap: 10%;
         }
 
@@ -140,11 +140,17 @@
             border: 3px solid silver;
 
             background: radial-gradient(circle, white, rgba(0, 255, 255, 0.75));
-            border-radius: 15%;
+            border-left: none;
+            border-right: none;
         }
 
         #balicky {
+            border-top: 7px solid silver;
             background: radial-gradient(circle, white, rgba(255, 215, 0, 0.75));
+        }
+
+        #pedikura {
+            border-bottom: 7px solid silver;
         }
         
     </style>
@@ -161,7 +167,7 @@
         <div class="cont" id="disp">
             <a href="#" class="link menu" id="balicky"><h3>Zvýhodněné balíčky</h3></a>
             <a href="#" class="link menu"><h3>Manikúra</h3></a>
-            <a href="#" class="link menu"><h3>Pedikúra</h3></a>
+            <a href="#" class="link menu" id="pedikura"><h3>Pedikúra</h3></a>
         </div>
 
         <div class="cont navi" id="bot">
