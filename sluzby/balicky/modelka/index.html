@@ -89,11 +89,16 @@
             color: black;
         }
 
-        #balicky {
-            background: radial-gradient(circle, white, rgba(255, 215, 0, 0.75));
+        #modelka {
+            background: radial-gradient(circle, white, rgba(192, 192, 192, 0.2));
 
             border-left: none;
             border-radius: 0 20% 20% 0;
+        }
+        #balicky {
+            background: radial-gradient(circle, white, rgba(255, 215, 0, 0.75));
+
+            border-radius: 20%;
         }
         #sluzby {
             background: radial-gradient(circle, white, rgba(255, 0, 0, 0.75));
@@ -114,7 +119,7 @@
 
 
         .cont#disp {
-            background: radial-gradient(circle, white, rgba(255, 215, 0, 0.2));
+            background: radial-gradient(circle, white, rgba(192, 192, 192, 0.2));
 
             border-top: 8px solid rgb(155, 155, 155);
             border-bottom: 8px solid rgb(155, 155, 155);
@@ -126,8 +131,8 @@
             height: 61.8%;
         
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
 
             padding: 12%;
             gap: 12%;
@@ -159,16 +164,16 @@
     <div class="ws">
         
         <div class="cont navi" id="top">
-            <a href="index.html" class="link" id="balicky"><h2>balíčky</h2></a>
-            <a href="../index.html" class="link" id="sluzby"><h2>služby</h2></a>
-            <a href="../../index.html" class="link" id="domu"><h2>domů</h2></a>
+            <a href="index.html" class="link" id="modelka"><h4>modelka</h4></a>
+            <a href="../index.html" class="link" id="balicky"><h4>balíčky</h4></a>
+            <a href="../../index.html" class="link" id="sluzby"><h4>služby</h4></a>
+            <a href="../../../index.html" class="link" id="domu"><h4>domů</h4></a>
         </div>
 
         <div class="cont" id="disp">
-            <a href="modelka/index.html" class="link menu" id="modelka"><h3>modelka</h3></a>
-            <a href="#" class="link menu" id="princezna"><h3>princezna</h3></a>
-            <a href="#" class="link menu" id="kralovna"><h3>královna</h3></a>
-            <!-- <a href="#" class="link menu" id="cisarovna"><h3>císařovna</h3></a> -->
+            <h4>
+                Klasická manikúra a pedikúra představují základní péči o ruce a nohy, která zajišťuje nejen estetický vzhled, ale také zdraví nehtů a pokožky. Tato služba je ideální pro ty, kteří chtějí mít vždy upravené ruce a nohy a zároveň pečovat o svou hygienu.
+            </h4>
         </div>
 
         <div class="cont navi" id="bot">
