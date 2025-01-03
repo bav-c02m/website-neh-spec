@@ -95,21 +95,22 @@
             border-left: none;
             border-radius: 0 20% 20% 0;
         }
-        #produkty {
-            background: radial-gradient(circle, white, rgba(255, 255, 0, 0.75));
+        #domu {
+            background: radial-gradient(circle, white, rgba(139, 69, 19, 0.75));
 
             border-right: none;
             border-radius: 20% 0 0 20%;
         }
-        #kontakty {
-            background: radial-gradient(circle, white, rgba(0, 255, 0, 0.75));
-
+        #objednani {
+            background: radial-gradient(circle, white, rgba(255, 125, 0, 0.75));
             border-radius: 20%;
         }
         
 
 
         .cont#disp {
+            /* background: radial-gradient(circle, white, rgba(255, 0, 0, 0.1)); */
+
             border-top: 8px solid rgb(155, 155, 155);
             border-bottom: 8px solid rgb(155, 155, 155);
 
@@ -118,20 +119,33 @@
                 0 0 10px 2px rgba(0, 0, 0, 1);
 
             height: 61.8%;
-
+        
             display: flex;
-            overflow: hidden;
+            flex-direction: column;
+            justify-content: space-between;
+
+            padding: 12%;
+            gap: 12%;
         }
 
-        .slide {
-            min-width: 100%;
-            transition: transform 2s ease;
-        }
+        .link.menu {
+            border: 2px solid silver;
+            border-radius: 20%;
 
-        img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+        }
+
+        #balicky {
+            background: radial-gradient(circle, white, rgba(255, 215, 0, 1));
+        }
+
+        #manikura {
+            background: radial-gradient(circle, white, rgba(0, 255, 255, 0.75));
+        }
+
+        #pedikura {
+            background: radial-gradient(circle, white, rgba(0, 255, 255, 0.75));
         }
      </style>
 </head>
@@ -139,30 +153,18 @@
     <div class="ws">
         
         <div class="cont navi" id="top">
-            <a href="sluzby/index.html" class="link" id="sluzby"><h2>služby</h2></a>
-            <a href="#" class="link" id="produkty"><h2>produkty</h2></a>
+            <a href="#" class="link" id="sluzby"><h2>služby</h2></a>
+            <a href="../index.html" class="link" id="domu"><h2>domů</h2></a>
         </div>
 
         <div class="cont" id="disp">
-            <div class="slide">
-                <img src="https://lh3.googleusercontent.com/p/AF1QipM0a4IXO5kkMJFEozJOnPq1uWuZbR79MIKD4OX-=s1360-w1360-h1020" alt="slide">
-            </div>
-            <div class="slide">
-                <img src="https://lh3.googleusercontent.com/p/AF1QipPKzKy_pogOO_YaRDsXXmuqGlGn2I27AcKt5PEf=s1360-w1360-h1020" alt="slide">
-            </div>
-            <div class="slide">
-                <img src="https://lh3.googleusercontent.com/p/AF1QipP6R9IclNApivM6XMxwFGl2arI9qWwHI3KZzhWC=s1360-w1360-h1020-rw" alt="slide">
-            </div>
-            <div class="slide">
-                <img src="https://lh3.googleusercontent.com/p/AF1QipO_-GQ_ic5LPwYAYeiJjoyjXn4ehkaF2-Yk1Xfk=s1360-w1360-h1020-rw" alt="slide">
-            </div>
-            <div class="slide">
-                <img src="https://lh3.googleusercontent.com/p/AF1QipO2qThlmI41uzihVOQKIC6TlOfkIUaElWzBPW7B=s1360-w1360-h1020" alt="slide">
-            </div>
+            <a href="#" class="link menu" id="balicky"><h3>Zvýhodněné balíčky</h3></a>
+            <a href="#" class="link menu" id="manikura"><h3>Manikúra</h3></a>
+            <a href="#" class="link menu" id="pedikura"><h3>Pedikúra</h3></a>
         </div>
 
         <div class="cont navi" id="bot">
-            <a href="#" class="link" id="kontakty"><h2>kontakty</h2></a>
+            <a href="#" class="link" id="objednani"><h2>objednani</h2></a>
         </div>
     </div>
     <script>
