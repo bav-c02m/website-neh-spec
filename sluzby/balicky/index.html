@@ -148,8 +148,8 @@
             background: radial-gradient(circle, white, rgb(255, 150, 150));
         }
         #kralovna {
-            background: radial-gradient(circle, white, rgb(200, 0, 0, 1));
-        }
+            background: radial-gradient(circle, white, rgba(128, 0, 128, 1));
+         }
         #cisarovna {
             background: radial-gradient(circle, white, rgba(128, 0, 128, 1));
         }
@@ -168,27 +168,12 @@
             <a href="#" class="link menu" id="modelka"><h3>modelka</h3></a>
             <a href="#" class="link menu" id="princezna"><h3>princezna</h3></a>
             <a href="#" class="link menu" id="kralovna"><h3>královna</h3></a>
-            <a href="#" class="link menu" id="cisarovna"><h3>císařovna</h3></a>
+            <!-- <a href="#" class="link menu" id="cisarovna"><h3>císařovna</h3></a> -->
         </div>
 
         <div class="cont navi" id="bot">
             <a href="#" class="link" id="objednani"><h2>objednani</h2></a>
         </div>
     </div>
-    <script>
-        let currentIndex = 0;
-        const slides = document.querySelectorAll('.slide');
-        const totalSlides = slides.length;
-
-        function showNextSlide() {
-            currentIndex = (currentIndex + 1) % totalSlides;
-            const offset = -currentIndex * 100;
-            slides.forEach(slide => {
-                slide.style.transform = `translateX(${offset}%)`;
-            });
-        }
-
-        setInterval(showNextSlide, 7000);
-    </script>
 </body>
 </html>
