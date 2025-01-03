@@ -89,11 +89,16 @@
             color: black;
         }
 
-        #sluzby {
-            background: radial-gradient(circle, white, rgba(255, 0, 0, 0.75));
+        #balicky {
+            background: radial-gradient(circle, white, rgba(255, 215, 0, 0.75));
 
             border-left: none;
             border-radius: 0 20% 20% 0;
+        }
+        #sluzby {
+            background: radial-gradient(circle, white, rgba(255, 0, 0, 0.75));
+
+            border-radius: 20%;
         }
         #domu {
             background: radial-gradient(circle, white, rgba(139, 69, 19, 0.75));
@@ -136,16 +141,17 @@
             height: 100%;
         }
 
-        #balicky {
-            background: radial-gradient(circle, white, rgba(255, 215, 0, 1));
+        #modelka {
+            background: radial-gradient(circle, white, rgba(192, 192, 192, 1));
         }
-
-        #manikura {
-            background: radial-gradient(circle, white, rgba(0, 255, 255, 1));
+        #princezna {
+            background: radial-gradient(circle, white, rgb(255, 150, 150));
         }
-
-        #pedikura {
-            background: radial-gradient(circle, white, rgba(0, 255, 255, 1));
+        #kralovna {
+            background: radial-gradient(circle, white, rgb(200, 0, 0, 1));
+        }
+        #cisarovna {
+            background: radial-gradient(circle, white, rgba(128, 0, 128, 1));
         }
      </style>
 </head>
@@ -153,14 +159,16 @@
     <div class="ws">
         
         <div class="cont navi" id="top">
-            <a href="index.html" class="link" id="sluzby"><h2>služby</h2></a>
-            <a href="../index.html" class="link" id="domu"><h2>domů</h2></a>
+            <a href="index.html" class="link" id="balicky"><h2>balíčky</h2></a>
+            <a href="../index.html" class="link" id="sluzby"><h2>služby</h2></a>
+            <a href="../../index.html" class="link" id="domu"><h2>domů</h2></a>
         </div>
 
         <div class="cont" id="disp">
-            <a href="balicky/index.html" class="link menu" id="balicky"><h3>Zvýhodněné balíčky</h3></a>
-            <a href="#" class="link menu" id="manikura"><h3>Manikúra</h3></a>
-            <a href="#" class="link menu" id="pedikura"><h3>Pedikúra</h3></a>
+            <a href="#" class="link menu" id="modelka"><h3>modelka</h3></a>
+            <a href="#" class="link menu" id="princezna"><h3>princezna</h3></a>
+            <a href="#" class="link menu" id="kralovna"><h3>královna</h3></a>
+            <a href="#" class="link menu" id="cisarovna"><h3>císařovna</h3></a>
         </div>
 
         <div class="cont navi" id="bot">
