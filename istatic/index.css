@@ -152,6 +152,8 @@ html, body {
   display: flex;
   overflow-x: auto;
   white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 50%;
 }
 
 .slide {
@@ -165,6 +167,8 @@ html, body {
   height: 100%;
 
   padding: 5%;
+  position: relative;
+  scroll-snap-align: center;
 }
 
 .slide img {
