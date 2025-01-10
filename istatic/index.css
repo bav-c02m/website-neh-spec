@@ -138,7 +138,7 @@ html, body {
   background-image: radial-gradient(
     circle, 
     white, 
-    rgba(0, 220, 255, 0.4)
+    rgba(0, 220, 255, 0.25)
     )
   ;
 
@@ -150,9 +150,6 @@ html, body {
   height: 61.8%;
 
   display: flex;
-
-  padding: 4%;
-  gap: 2%;
 }
 
 .slide {
