@@ -16,3 +16,12 @@ html, body {
   justify-content: center;
   align-items: center;
 }
+
+
+@font-face {
+  font-family: 'Rubik Lines';
+  src: url('../../fonts/RubikLines-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
