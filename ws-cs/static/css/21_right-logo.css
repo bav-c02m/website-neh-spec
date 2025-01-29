@@ -10,6 +10,30 @@
 }
 
 
+.card-conts.logo {
+  height: 48%;
+
+  flex-direction: column;
+}
+
+
+.card-conts.services {
+  height: 16%;
+}
+
+
+.card-conts.options {
+  height: 16%;
+}
+
+
+.card-conts.galerie {
+  height: 20%;
+}
+
+
+
+
 .card-conts p {
   border: .11vh solid rgb(
     78, 78, 78
@@ -21,14 +45,10 @@
     215, 235, 255, 0.85
     )
   ;
+
+  font-weight: bold;
 }
 
-
-.card-conts.logo {
-  height: 48%;
-
-  flex-direction: column;
-}
 
 .bystrova {
   background: radial-gradient(
@@ -44,10 +64,10 @@
   ;
 
   font-size: 2.6em;
-  font-weight: bold;
 
   padding: 3% 3% 1% 3%;
 }
+
 
 .neh-spec {
   background: radial-gradient(
@@ -62,36 +82,22 @@
     0	0	.4vh .2vh
   ;
 
-  font-size: 1.3em;
-  font-weight: bold;
+  font-size: 1.4em;
 
   padding: 2% 2% 1% 2%;
 }
 
 
-.card-conts.services {
-  height: 16%;
-}
-
-
-.card-conts.options {
-  height: 16%;
-}
-
-.card-conts.galerie {
-  height: 20%;
-}
-
 .serv-opt {
+  font-size: 1.14em;
   padding: 1% 2% 1% 2%;
-  font-weight: bold;
 }
 
-.galerie-p {
+.gallery {
   font-size: 1.6em;
-  font-weight: bold;
   padding: 1% 3% 1% 3%;
 }
+
 
 .arrows {
   background: radial-gradient(
