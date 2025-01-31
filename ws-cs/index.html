@@ -15,10 +15,68 @@
 		content="width=device-width, initial-scale=1.0"
 	>
   <link rel="stylesheet" href="static/css/0_resets-html-body.css">
+  <link rel="stylesheet" href="static/css/1_working-space.css">
+  <link rel="stylesheet" href="static/css/2_top.css">
+  <link rel="stylesheet" href="static/css/3_mid.css">
+  <link rel="stylesheet" href="static/css/4_bot.css">
+  <link rel="stylesheet" href="static/css/5_butts-navi.css">
+  <link rel="stylesheet" href="static/css/6_scroll-x.css">
+  <link rel="stylesheet" href="static/css/7_slides.css">
+  <link rel="stylesheet" href="static/css/8_cards.css">
+  <link rel="stylesheet" href="static/css/9_welcome-card.css">
 </head>
 
 <body>
-  
+  <div class="working-space">
+    <div class="top">
+      <a href="#" class="butts-navi sluzby"><p>Služby</p></a>
+			<a href="#" class="butts-navi produkty"><p>Produkty</p></a>
+    </div>
+    <div class="mid">
+      <div class="scroll-x">
+        <div class="slide right">
+          <div class="card right">
+
+            <div class="welcome-card logo">
+              <p class="bystrova">BYSTROVÁ</p>
+							<p class="neh-spec">NEHTOVÝ SPECIALISTA</p>
+            </div>
+            <div class="welcome-card services">
+              <p class="serv-opt">manikúra</p>
+							<p class="serv-opt">modeláž</p>
+              <p class="serv-opt">pedikúra</p>
+            </div>
+            <div class="welcome-card options">
+              <p class="serv-opt">Wi-Fi</p>
+							<p class="serv-opt">horký nápoj</p>
+							<p class="serv-opt">WC</p>
+            </div>
+            <div 
+              class="welcome-card gallery"
+              onclick="scrollFunc()"
+            >
+              <p class="galerie">GALERIE</p>
+							<p class="arrows">></p>
+							<p class="arrows">></p>
+							<p class="arrows">></p>
+            </div>
+
+          </div>
+        </div>
+        
+        <div 
+          class="slide center"
+          id="scroll"
+        >slide-center
+      </div>
+      </div>
+    </div>
+    <div class="bot">
+      <a href="#" class="butts-navi o-mne"><p>O mně</p></a>
+			<a href="#" class="butts-navi kontakty"><p>Kontakty</p></a>
+    </div>
+  </div>
+  <script src="static/js/0_scroll-func.js"></script>
 </body>
 
 </html>
