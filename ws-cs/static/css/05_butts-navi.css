@@ -12,7 +12,6 @@
 
   text-decoration: none;
   color: black;
-  font-weight: bold;
 
   width: 38.2%;
   height: 61.8%;
@@ -24,6 +23,7 @@
 
 
 .butts-navi p {
+  font-weight: bold;
   font-size: 1.2em;
 }
 
@@ -80,8 +80,8 @@
 }
 
 
-/* @media (min-width: 360px) {
-  .butts-navi {
-    font-size: 1.5em;
+@media (min-width: 360px) {
+  .butts-navi p {
+    font-size: 1.32em;
   }
-} */
+}

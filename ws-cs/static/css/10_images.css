@@ -83,3 +83,10 @@
 #scroll img.fullscreen {
   height: 100dvh;
 }
+
+
+@media (min-width: 360px) {
+  #scroll p {
+    font-size: .88em;
+  }
+}
