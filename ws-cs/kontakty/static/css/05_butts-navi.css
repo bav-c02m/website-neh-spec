@@ -28,32 +28,6 @@
 }
 
 
-.butts-navi.sluzby {
-  border-left: none;
-  border-radius: 0 24% 24% 0;
-
-  background-image: radial-gradient(
-    circle, 
-    white, 
-    rgba(255, 0, 0, .9)
-    )
-  ;
-}
-
-
-.butts-navi.produkty {
-  border-right: none;
-  border-radius: 24% 0 0 24%;
-
-  background-image: radial-gradient(
-    circle, 
-    white, 
-    rgba(255, 255, 0, .9)
-    )
-  ;
-}
-
-
 .butts-navi.domu {
   border-left: none;
   border-radius: 0 24% 24% 0;

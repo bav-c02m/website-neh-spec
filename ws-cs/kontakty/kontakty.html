@@ -23,15 +23,16 @@
   <link rel="stylesheet" href="../static/css/07_slides.css">
   <link rel="stylesheet" href="../static/css/08_cards.css">
   <link rel="stylesheet" href="static/css/09_contact-card.css">
+  <link rel="stylesheet" href="static/css/10_images.css">
 </head>
 
 <body>
   <div class="working-space">
     <div class="mid">
       <div class="scroll-x">
+
         <div class="slide right">
           <div class="card right">
-
             <div class="contact-card phone">
               <p class="view">Telefon:</p>
               <p class="view info">602 051 645</p>
@@ -43,8 +44,8 @@
             </div>
 
             <div class="contact-card e-mail">
-              <p class="view">Email:</p>
-              <p class="view info">alla.nehty.brno@gmail.com</p>
+              <p class="view">e-mail:</p>
+              <p class="view info">bystrova.nehty@gmail.com</p>
             </div>
 
             <div class="contact-card works">
@@ -56,15 +57,30 @@
               <p class="view info">sobota 8-15:00</p>
             </div>
 
-            <div class="contact-card where">
+            <div 
+              class="contact-card where"
+              onclick="scrollFunc()"
+              >
               <p class="kde-jsem">KDE JSEM?</p>
               <p class="arrows">></p>
               <p class="arrows">></p>
               <p class="arrows">></p>
             </div>
-
           </div>
         </div>
+
+        <div 
+          class="slide center"
+          id="scroll"
+          >
+          <p>Kliknutím na obrázek jej zvětšíte na celou obrazovku.</p>
+          <p id="vstup">Vstup: kovová vrata vedle zastávky Náměstí Svobody.</p>
+          <img 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQQI2-tn2Lieltl0JJoRElwcwUVd5WBLudMw&s" alt="mani-table"
+            onclick="imgFullScreen(event)"
+          >
+        </div>
+
       </div>
     </div>
     <div class="bot">
