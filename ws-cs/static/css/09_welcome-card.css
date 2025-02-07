@@ -91,8 +91,15 @@
 }
 
 .galerie {
-  font-size: 1.6em;
+  background: radial-gradient(
+    circle, 
+    white, 
+    rgba(215, 235, 255, 0.85)
+    )
+  ;
+
   padding: 1% 3% 1% 3%;
+  font-size: 1.6em;
 }
 
 
