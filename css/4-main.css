@@ -1,0 +1,29 @@
+
+main {
+  border-top: 0.4em solid rgb(
+    178, 178, 178
+    )
+  ;
+  border-bottom: 0.4em solid rgb(
+    178, 178, 178
+    )
+  ;
+  
+  background: rgb(
+    1, 111, 111
+    )
+  ;
+
+  background-image: radial-gradient(
+    circle,
+    white,
+    rgba(0, 128, 255, 0.25)
+    )
+  ;
+
+  height: 62%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
