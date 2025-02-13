@@ -1,0 +1,122 @@
+
+.welcome-card {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 6%;
+}
+
+
+.welcome-card.logo {
+  height: 48%;
+
+  flex-direction: column;
+}
+
+
+.welcome-card.services {
+  height: 14%;
+}
+
+
+.welcome-card.options {
+  height: 14%;
+}
+
+
+.welcome-card.gallery {
+  height: 24%;
+}
+
+
+.welcome-card p {
+  border: .11vh solid rgb(
+    78, 78, 78
+    )
+  ;
+  border-radius: 8%;
+
+  background-color: rgba(
+    215, 235, 255, 0.85
+    )
+  ;
+
+  font-weight: bold;
+}
+
+
+.bystrova {
+  background: radial-gradient(
+    circle,
+    white,
+    rgba(139, 69, 19, 0.8)
+    )
+  ;
+
+  box-shadow: inset
+    0 0 .4vh .2vh,
+    0	0	.4vh .2vh
+  ;
+
+  font-size: 2.6em;
+
+  padding: 3% 3% 1% 3%;
+}
+
+
+.neh-spec {
+  background: radial-gradient(
+    circle,
+    white,
+    rgba(139, 69, 19, 0.8)
+    )
+  ;
+  
+  box-shadow: inset
+    0 0 .4vh .2vh,
+    0	0	.4vh .2vh
+  ;
+
+  font-size: 1.4em;
+
+  padding: 2% 2% 1% 2%;
+}
+
+
+.serv-opt {
+  padding: 1% 2% 1% 2%;
+}
+
+.galerie {
+  background: radial-gradient(
+    circle, 
+    white, 
+    rgba(215, 235, 255, 0.85)
+    )
+  ;
+
+  padding: 1% 3% 1% 3%;
+  font-size: 1.6em;
+}
+
+
+.arrows {
+  background: radial-gradient(
+    circle,
+    white,
+    rgba(255, 0, 0, 0.8)
+    )
+  ;
+
+  box-shadow: inset
+    0 0 .4vh .2vh,
+    .2vh	0	.4vh .2vh
+  ;
+
+  font-size: 1.4em;
+
+  padding: 1% 3% 1% 3%;
+}
